@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.main {
+    background-color: antiquewhite;
+    margin: 0;
+    position: absolute;
+    max-height: 100%; /* or any value you prefer */
+    overflow-y: auto; 
+    width: 101vw;
+    height: 101vh;
+    display: inline;
+    overflow: scroll;
+}
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    overflow: scroll;
+}
+.header {
+    margin-top: 0;
+    margin-bottom: 3vh;
+    height: 10vh;
+    text-align: left; 
+    padding: 5px;
+    background-color: #b8a791;
+} 
+.counters {
+    display: flex;
+    margin: 40px 20px 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.newcounter {
+    margin-left: 4%;
+    background-color:rgb(15, 186, 15);
+    border-radius: 10px;
+    border: 0;
+    font-size: 40px;
+    height: 70px;
+    width: 140px;
+    transition: background-color 0.3s ease;
+}
+.newcounter:hover {
+    background-color: rgb(16, 145, 16);
+}
+.emoji {
+    display: inline;
+    font-size: 30px;
+    font-family: Fredoka, Arial, Helvetica, sans-serif;
+    margin-left: 1%;
+}
+.title {
+    display: inline;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: Fredoka, Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+}
+
+.counter {
+    border: 1px solid gray;
+    font-family: Fredoka, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 17vw;
+}
+.points {
+    font-size: 40px;
+}
+
+.counter-button {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    transition: background-color 0.3s ease;
+    border-radius: 7px;
+    border: 2px black solid;
+}
+
+.rename {
+    width: 20%;
+    height: 10%;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border: 2px black solid;
+    background-color: yellow;
+    vertical-align: middle;
+}
+.rename:hover {
+    background-color: rgb(231, 231, 22);
+}
+.add {
+    background-color: rgb(96, 189, 3);
+}
+.add:hover {
+    background-color: rgb(116, 221, 10);
+}
+.minus {
+    background-color: red;
+}
+.minus:hover {
+    background-color: rgb(255, 99, 99);
+}
+.settings {
+    background-color: rgb(225, 225, 225);
+}
+.settings:hover {
+    background-color: rgb(200, 199, 199);
+}
+
+.settings-input {
+    display: inline;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 225, 201, 0.7);
+}
+.x-button {
+    display: block;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: -1%;
+    width: 38px;
+    border-radius: 10px;
+    height: 38px;
+    background-color: rgb(255, 93, 93);
+    border: 2px solid rgb(70, 70, 70);
+    font-size: 27px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+.x-button:hover {
+    background-color: red;
+}
+
+.menu-gui {
+    background-color: rgb(252, 250, 242);
+    border-radius: 10px;
+    margin: 30vh auto 0 auto;
+    width: 38vw;
+    height: 40vh;
+    padding-top: 20px;
+}
+label {
+    font-family: Fredoka, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+.menu-input {
+    border: 2px solid rgb(244, 225, 201);
+    width: 16vw;
+    height: 4vh;
+    font-size: 16px;
+    margin-left: 23%;
+    display: inline;
+    vertical-align: middle;
+}
+.finish {
+    margin-top: 28%;
+    border: 0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    height: 5vh;
+}
+.create {
+    background-color: lawngreen;
+}
+
+.remove {
+    background-color: red;
+}
+.remove:hover {
+    background-color: rgb(172, 3, 3);
+}
+
+.create:hover {
+    background-color: rgb(123, 232, 14);
+}
+
+footer {
+    font-family: Fredoka, Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 10px;
+    font-weight: 500;
+    bottom: 0;
+    line-height: 0.5;
+}

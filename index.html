@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wannicounter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main" id="main">
+    <div class="header">
+    <br>
+    <h1 class="emoji">📈📉</h1>
+    <h1 class="title">Wannicounter</h1>
+    </div>
+    <button onclick="ChangeMenu('add-menu')" class="newcounter">+</button>
+    <div class="counters" id="counters">
+    </div>
+    <footer>
+        <p>Another amazing website made by: <a href="https://www.youtube.com/channel/UCUh5PU6epQtIwC_k6xeFbVQ" target="_blank">Wonkanese</a></p>
+        <p>Version 1.0 (Cookies Coming Soon...)</p>
+        <p>Email any problems at: t.harrison.webster@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</div>
+<div class="add-menu menu" id="add-menu">
+    <div class="menu-gui">
+        <button onclick="ChangeMenu('main')" class="x-button">x</button>
+        <input placeholder="Counter Name" class="menu-input" id="input-name"></input>
+        <br><br>
+        <input placeholder="Score" class="menu-input" id="input-score" type="number"></input>
+        <button onclick="CreateWanni()" class="menu-input finish create">Create</button>
+    </div>
+</div>
+<div class="settings-menu menu" id="settings-menu">
+    <div class="menu-gui">
+        <button onclick="ChangeMenu('main')" class="x-button">x</button>
+        <input placeholder="Counter Name" style="margin-left: 19%;" class="menu-input settings-input" id="settings-name"></input>
+        <button onclick="Rename('name')" class="rename">Rename</button>
+        <br><br>
+        <input placeholder="Score" style="margin-left: 19%;" class="menu-input settings-input" id="settings-score" type="number"></input>
+        <button onclick="Rename('score')" class="rename">Rename</button>
+        <button onclick="RemoveWanni()" class="menu-input finish remove">Remove</button>
+    </div>
+</div>
+</body>
+</html>
